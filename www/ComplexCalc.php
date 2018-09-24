@@ -36,4 +36,8 @@ class ComplexCalc
         $im=$a->im-$b->im;
         return new Complex($re,$im);
     }
+    function modul($a, $b){
+        $re=sqrt(pow($a->re, 2)+pow($b->re, 2));
+        $im=sqrt(pow($a->im,2)+pow($b->im,2));
+    }
 }

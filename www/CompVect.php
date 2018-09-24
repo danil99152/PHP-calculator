@@ -38,4 +38,13 @@ class CompVect extends ComplexCalc
         return $c;
     }
 
+    public function modul($a, $b)
+    {
+        $c = [];
+        foreach ($a as $key=>$value){
+            $c[$key] = parent::modul($a[$key] , $b[$key]);
+        }
+        return $c;
+    }
+
 }
